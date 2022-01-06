@@ -11,18 +11,7 @@
 
 use think\captcha\Captcha;
 use think\facade\Config;
-use think\facade\Route;
 use think\facade\Url;
-use think\facade\Validate;
-
-Route::get('captcha/[:id]', "\\think\\captcha\\CaptchaController@index");
-
-Validate::extend('captcha', function($value, $id = '') {
-    return captcha_check($value, $id);
-});
-
-Validate::setTypeMsg('captcha', ':attribute错误!');
-
 
 if (!function_exists('captcha')) {
     /**
