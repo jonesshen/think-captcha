@@ -1,8 +1,10 @@
 # think-captcha
 thinkphp5.1 验证码类库
 
+此版本克隆自 [top-think/think-captcha](https://github.com/top-think/think-captcha)
+
 ## 安装
-> composer require topthink/think-captcha
+> composer require jonesshen/think-captcha
 
 
 ##使用
@@ -21,13 +23,13 @@ thinkphp5.1 验证码类库
 ### 控制器里验证
 使用TP5的内置验证功能即可
 ~~~
-$this->validate($data,[
-    'captcha|验证码'=>'require|captcha'
+$this->validate($data, [
+    'captcha|验证码' => 'require|captcha'
 ]);
 ~~~
 或者手动验证
 ~~~
-if(!captcha_check($captcha)){
- //验证失败
-};
+if (!captcha_check($captcha)) {
+    //验证失败
+}
 ~~~
