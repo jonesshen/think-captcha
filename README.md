@@ -4,7 +4,9 @@ thinkphp5.1 验证码类库
 此版本克隆自 [top-think/think-captcha](https://github.com/top-think/think-captcha)
 
 ## 安装
-> composer require jonesshen/think-captcha
+~~~
+composer require jonesshen/think-captcha
+~~~
 
 ## 使用
 
